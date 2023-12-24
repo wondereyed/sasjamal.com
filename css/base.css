@@ -1,0 +1,91 @@
+/* CSS Document */
+
+body {
+	padding:35px;
+}
+
+body {
+	font-size: .93em;
+	font-weight: normal;
+	font-family: Verdana, Arial, Helvetica;
+	color: #666;
+}
+
+h1 {
+	font-size: 1.6em;
+	color: #990000;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 1.1em;
+	font-weight: bold;	
+}
+
+#resume {
+	color: #009;
+}
+
+#projects {
+	color:#060;
+}
+
+#obsessions {
+	color: #C09;
+}
+
+#songs {
+	color:#906;
+}
+
+
+#resume h2, #projects h2, #obsessions h2, #collectivesoul h3, #collectivesoul table, #songs h2, #bands h2, #philosophers h2 {
+	padding-left: 25px;	
+}
+
+#others {
+	padding: 25px;
+	border-color: #666666;
+	border-style: dashed;
+	border-width: 2px;
+}
+
+#credits {
+	font-size: .8em;
+	color: #999;
+}
+
+#datemodified {
+	font-size: .8em;
+	color: #999;
+}	
+
+a:link, a:visited, a:active, a:hover {
+   color:inherit;
+}
+
+#wig {
+border: 1px solid #666666;
+padding: 10px;	
+}
+
+#favoritethings {
+font-family: "Times New Roman", Times, serif;
+font-size: 2.4em;
+font-style: italic;
+
+}
+
+.carincident {
+padding: 25px;
+	border-color: #990000;
+	background-color: #ffffcc;
+	border-style:ridge;
+	border-width: 1px;
+	
+}
