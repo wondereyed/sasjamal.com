@@ -1,109 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Bordeom's not a burden anyone should bear. Sas</title>
+<html>
+  <body>
+    <!-- Add a placeholder for the Twitch embed -->
+    <div id="twitch-embed"></div>
 
-<link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <!-- Load the Twitch embed JavaScript file -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
 
-<!-- inserted -->
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="google-site-verification" content="43r1iaZiPmafb9uZ1fqpA3EmHDYdXu2Tyay11pY5Pv4">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta name="description" content="Sarfaraz (Sas) Jamal of SasJamal.com">
-<meta name="rating" content="general">
-<meta name="keywords" content="sarfaraz, sas, sasjamal, sarfaraz jamal, graphic design, software engineering">
-<meta name="author" content="Sarfaraz (Sas) Jamal">
-<meta property="og:title" content="Profile of Sarfaraz Jamal">
-<meta property="og:description" content="Sarfaraz (Sas) Jamal of sasjamal.com">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://sasjamal.com/">
-<meta property="og:image" content="https://cbjpeg.stream.highwebmedia.com/stream?room=wondereyed&c=191">
-<meta property="og:image:width" content="854">
-<meta property="og:image:height" content="480">
-<meta property="og:site_name" content="sasjamal.com">
-<meta property="og:locale" content="en_US">
-<link rel="image_src" type="image/jpeg" href="https://cbjpeg.stream.highwebmedia.com/stream?room=wondereyed&c=191">
-<link rel="canonical" href="https://sasjamal.com/">
-<title>Profile of Sarfaraz Jamal - SasJamal.com</title>
-
-<meta name="msapplication-TileColor" content="#2d89ef">
-
-<meta name="theme-color" content="#f3f5f6">
-<script>let current_theme='light-theme';document.documentElement.setAttribute('data-theme', current_theme);</script>
-
-<style>.badge-away {background-color:rgb(255, 193, 7)}.badge-hidden {background-color:rgb(0, 123, 255)}.badge-online {background-color:rgb(40, 167, 69)}.badge-deleted {background-color:rgb(199, 203, 213)}.badge-offline {background-color:rgb(220, 53, 69)}.badge-private {background-color:rgb(255, 129, 7)}.badge-unknown {background-color:rgb(199, 223, 213)}</style>
-<noscript><style>body,.topbar{margin-top:25px;}</style></noscript>
-
-<style>.sessions .away {background-color:rgb(255, 193, 7)}.sessions .hidden {background-color:rgb(0, 123, 255)}.sessions .public {background-color:rgb(40, 167, 69)}.sessions .private {background-color:rgb(255, 129, 7)}</style>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E3D0RZPF6G"></script>
-<script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-E3D0RZPF6G', {'user_id': 'tazbifpk86a7t2w3'});</script>
-
-
-
-
-
-</head>
-
-<body>
-
-
-<div id="ad-blocker-msg" style="display: none !important;"></div>
-
-<div class="cam-anim text-center">
-        <img src="images/logo.png" width=23%;>
-        <br />
-
-        <center>
-<!-- Add a placeholder for the Twitch embed -->
-<div id="twitch-embed"></div>
-
-<!-- Load the Twitch embed script -->
-<script src="https://player.twitch.tv/js/embed/v1.js"></script>
-
-<!-- Create a Twitch.Player object. This will render within the placeholder div -->
-<script type="text/javascript">
-  var embed = Twitch.Player("twitch-embed", {
-    channel: "sasjamal"
-  });
-
-                var player = embed.getPlayer();
-        // var isMuted = player.getMuted()
-        player.setMuted(false)
-        
-</script>
-                    </center>
-
-</div>
-
-
-
-<div class="toast-container position-fixed bottom-0 start-0 p-3" aria-live="polite" aria-atomic="true"></div>
-
-<script src="static/CACHE/js/output.b0be3b851da3.js"></script>
-<script src="static/CACHE/js/output.aaa865b1bf37.js" defer></script>
-<script>chaturfier.core.set_ua(true); chaturfier.core.set_out_link(1); $(function(){chaturfier.core.out();});</script>
-<script>let cam_name='wondereyed', cam_gender='m', cam_counted=true, lists_cam='wondereyed', lists_items=4, ranking=false, nsoff=false, user_auth=true, user_valid=false, alert_created='', max_notes=false; chaturfier.profile.init_profile();</script>
-<noscript><div id="noscript-warning">SasJamal.com works best with JavaScript enabled. Update your browser options, then <a href="">try again</a>.</div></noscript>
-
-
-<br />
-<br />
-
-<center>
-
-<iframe
-  id="chat_embed"
-  src="https://www.twitch.tv/embed/sasjamal/chat?parent=www.example.com"
-  height="500"
-  width="350">
-</iframe>
-        
-    <!-- <a href="https://invite.paltalk.net/FZ3DfZ464Fb">Kick it with <strong><em>Sas</em></strong></a> =) -->
-</center>
-
-
-</body>
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 854,
+        height: 480,
+        channel: "sasjamal",
+        // Only needed if this page is going to be embedded on other websites
+        parent: ["blog.sasjamal.com", "app.sasjamal.com"]
+      });
+    </script>
+  </body>
 </html>
