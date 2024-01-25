@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>
+
+<script   src="http://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+<title>SasJamal - Graphic Design and Sofware by Sarfaraz Jamal</title>
+
+<style>
+
+html, body {
+height:100%;
+display:block;
+margin: 0;
+padding: 0;
+font-family: verdana, arial, helvetica;
+font-size: 12pt;
+color: #666666;
+}
+
+#header {
+border-bottom: 3px solid #bdced5;
+height: 100px;
+}
+
+#sasjamal {
+padding: 30px;
+}
+
+#homepage {
+
+background: #00ff00 url("bg.jpg");
+background-size: cover; 
+background-position: center bottom;
+width: 100%;
+
+
+
+}
+
+#menu {
+
+float: right;
+padding: 40px;
+font-size: 1.05em;
+}
+
+.menu-item a, .menu-item a:link, .menu-item a:visited, .menu-item a:active, .menu-item a:hover {
+text-decoration: none;
+color: #000000;
+}
+
+.menu-item a:hover {
+text-decoration: none;
+color: #000000;
+}
+
+
+.menu-item-hover {
+
+padding-bottom: 5px;
+border-bottom: 5px solid #ef854c;
+}
+
+#mast {
+
+text-align: center;
+padding-top: 15%;
+padding-left: 12%;
+padding-right: 12%;
+font-family: times new roman;
+letter-spacing: .2em;
+color: #000000;
+}
+
+
+
+
+</style>
+
+<script>
+
+
+$(document).ready(function(){
+
+        updateContainer();
+
+    $(window).resize(function() {
+        updateContainer();
+    });
+
+
+$( ".menu-item" ).hover(function() {
+
+  $( this ).toggleClass("menu-item-hover");
+
+});
+
+
+
+
+});
+
+function updateContainer() {
+
+	$("#homepage").css("height",$(window).height()-$("#header").height() -3);
+
+}
+
+
+</script>
+
+</head>
+
+<body>
+
+<div id="header">
+
+
+<img src="sasjamal.png" id="sasjamal">
+<div id="menu">
+<span class="menu-item"><a href=#>Home</a></span>    &nbsp;&nbsp;&nbsp;    <span class="menu-item"><a href=#>About Me</a></span>    &nbsp;&nbsp;&nbsp;    <span class="menu-item"><a href=#>Portfolio</a></span>    &nbsp;&nbsp;&nbsp;    <span class="menu-item"><a href=#>Services</a></span>    &nbsp;&nbsp;&nbsp;    <span class="menu-item"><a href=#>Contact Me</a></span>
+</div>
+
+</div>
+
+<div id="homepage">
+
+
+<div id="mast">
+<span style="font-size: 3em">GRAPHIC DESIGN & SOFTWARE DEVELOPMENT</span>
+<BR />
+<span style="font-size: 2em">BY SARFARAZ JAMAL</span>
+</div>
+
+
+
+</div>
+
+
+</body>
+</html>
